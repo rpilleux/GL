@@ -1,9 +1,13 @@
-//  Copyright (c) 2018 Antoine Tran Tan
-//
+#include "TP_lib.h"
+#include "TP_lib.c"
 
-#include "my_header.h"
-
-int main(void)
+void main(void)
 {
-    return 0;
-}
+	short resultat, i=0; // Définition des variables
+	while (i<10)		 // Tant que i est inférieur à 10 effectuer la boucle
+	{
+		resultat =		 // "resultat" est le résultat de la fonction LancerDe()
+	LancerDe ();
+		i++;			 // Incrémente i de +1
+	}
+}	
