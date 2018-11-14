@@ -1,13 +1,32 @@
 #include "TP_lib.h"
-#include "TP_lib.c"
+#include "TP_lib.c" 
+
+	short resultat; 
+	unsigned short points=0;
+
 
 void main(void)
+
 {
-	short resultat, i=0; // Définition des variables
-	while (i<10)		 // Tant que i est inférieur à 10 effectuer la boucle
+	
+	while(resultat!=1)
+		
 	{
-		resultat =		 // "resultat" est le résultat de la fonction LancerDe()
-	LancerDe ();
-		i++;			 // Incrémente i de +1
+		 resultat=
+		LancerDe();
+		 
+		if(resultat==2 ||    resultat==4 || resultat==6)
+			
+			points=resultat;
+		
+		else if(resultat==3)
+			
+			points=points*2;
+		
+		else if(resultat==5)
+		
+			points=points-2;
+			
 	}
-}	
+	
+}
