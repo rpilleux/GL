@@ -16,14 +16,14 @@ int vol=0;
 int y=1;
 int z=0;
 
-   while (S1<9876)
+  while(3*n <9876)
    {
 	   S1=S1+3*n;
 		  n=n+1;
    }
    
    while (a<12)
-   { val=val+a;
+   { val=val+x;
 	   a=a+1;
 		 x=((rand())%10)+1;
 		   
