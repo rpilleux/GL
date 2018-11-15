@@ -17,7 +17,7 @@ void main(void)
 		 
 		if(resultat==2 ||    resultat==4 || resultat==6)
 			
-			points=resultat;
+			points= points + resultat;
 		
 		else if(resultat==3)
 			
