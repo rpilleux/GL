@@ -2,6 +2,11 @@
 #include <math.h>
 #define RAND_MAX 32767
 
+
+int main(void)
+
+{ 
+	
 int n=1;
 long long S1=0;
 int x;
@@ -10,10 +15,6 @@ int val=0;
 int vol=0;
 int y=1;
 int z=0;
-
-int main(void)
-
-{  
 
    while (S1<9876)
    {
