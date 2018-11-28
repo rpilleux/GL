@@ -1,70 +1,36 @@
-#include "stdlib.h"
-#include "stdlib.h"
-#include <time.h>
+#include "TP_lib_suite.h"
+#include "my_header.h"
 
-#define SEUILB -100
-#define SEUILH 200
-#define SEUIL 5
-
-int dist[10]={50,300,550,55,41,123,48,59,811,9};
-int sat[10]={rand()%};
-unsigned char bin[10];
-int a[5]={1,5,9,8,11};
-int b[5];
-unsigned char i;
- 
-void main(void)
-
-{
- 
-for(i=0; i<10; i=i+1)
-	{
+int main(void)
+{	
+	unsigned char joueur[6]= {6,5,45,41,18,16};
+        unsigned char gagnante[6];
+	short int p,u,j,i;
+	short int tiragealemax = 0;
+        short int nbgagnante = 0;
 	
-	 if (bin[i]>SEUIL)
-		 
-		 bin[i]=1;
-				
-	else
-		bin[i]=0;
+	for(p=0;p<100;p++)
+	{    
+	initialiserTirage();
+	for(u=0;u<6;u++)
+	{
+	     gagnante[u]= tirerNumero();
 	}
-		 }
-
-
-
-
-for(i=0; i<10; i=i+1)
-
-{
-	if(sat[i]>SEUILH)
-		
-		sat[i]=SEUILH;
-		
-		else if (sat[i]<SEUILB)
-			
-			sat[i]=SEUILB;
-			
-			else(sat[i]<SEUILH && sat[i]>SEUILB);
-				
-				sat[i]=sat[i];
-       }
-
-
-
-
-for(i=1; i<11; i=i+1)
-
-{	 
-	 dist[i]=dist[i]-dist[i-1];
-	 
-			
-       }
-
-
-	for(i=0; i<5; i=i+1)
+	for (i=0;i<6;i++)													   
 	{
-	a[i]=a[i];
-	 b[r]=a[i];
-		r--;
-	}	 
-	
+		for (j=0;j<6;j++)
+		{	
+			if(joueur[i]==gagnante[j])
+			{
+			nbgagnante++;
+			}
+		                 if( tiragalemax < nbgagnante)
+				{
+			       tiragalemax = nbgagnante;
+				}	
+		}
+	}         nbgagnante = 0;
+}	
+
+   		return 0;
 }
